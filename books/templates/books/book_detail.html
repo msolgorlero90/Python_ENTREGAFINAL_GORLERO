@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ book.title }}</h1>
+    <p><strong>Autor:</strong> {{ book.author }}</p>
+
+    {% if book.cover_image %}
+        <img src="{{ book.cover_image.url }}" alt="{{ book.title }}" width="250">
+    {% endif %}
+
+    <div>
+        {{ book.description|safe }}
+    </div>
+
+    <p><em>Publicado el {{ book.created_at|date:"d M Y" }}</em></p>
+
+    <a href="{% url 'book_list' %}">← Volver a la lista</a>
+{% endblock %}
