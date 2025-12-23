@@ -1,0 +1,20 @@
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+
+# Base de datos local (no se sube)
+db.sqlite3
+
+# Archivos de medios (imágenes, uploads)
+media/
+
+# Entornos virtuales (si los usaste)
+venv/
+env/
+
+# Archivos temporales o de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de VSCode
+.vscode/
